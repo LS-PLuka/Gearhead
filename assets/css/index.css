@@ -1,0 +1,173 @@
+/*=============== copyright 2025 Mari & Denny ===============*/
+
+/*-----------------------------------*\
+  #VARIÁVEIS
+\*-----------------------------------*/
+
+:root {
+  /*==== colors ====*/
+  --black-color: hsl(220, 24%, 12%);
+  --black-color-light: hsl(220, 24%, 15%);
+  --black-color-lighten: hsl(220, 20%, 18%);
+  --white-color: #fff;
+  --body-color: hsl(0, 0%, 0%);
+  --bg-color: rgba(17, 17, 17, 0.95);
+  --purple-color: #d03ad8;
+  --purple-dark: hsl(292, 70%, 40%);
+  --purple-light: hsl(292, 75%, 70%);
+  --gray-color: hsl(0, 0%, 40%);
+  --gray-light: hsl(0, 0%, 60%);
+
+  /*==== gradiente ====*/
+  --gradient-purple: linear-gradient(
+    to right bottom,
+    hsl(292, 100%, 10%),
+    hsl(292, 90%, 25%),
+    hsl(292, 80%, 40%),
+    hsl(292, 75%, 55%),
+    hsl(292, 80%, 65%),
+    hsl(292, 90%, 75%)
+  );
+
+  /*====cor do texto ====*/
+  --text-white: hsla(0, 0%, 100%, 1);
+  --text-gainsboro: hsla(0, 0%, 87%, 1);
+  --text-champagne-pink: hsla(23, 61%, 86%, 1);
+
+  /*==== tipografia ====*/
+  --ff-poppins: 'Poppins', cursive;
+  --ff-cinzel: 'Cinzel', sans-serif;
+
+  /*==== Tamanho da fonte ====*/
+  --fs-1: 3.6rem;
+  --fs-2: 2.4rem;
+  --fs-3: 2rem;
+  --fs-4: 1.7rem;
+  --fs-5: 1.6rem;
+  --fs-6: 1.5rem;
+  --fs-7: 1.4rem;
+  --fs-8: 1.2rem;
+
+  /*==== negrito ====*/
+  --weight-regular: 400;
+  --weight-semiBold: 600;
+  --weight-bold: 700;
+
+  /*==== espaçamento ====*/
+  --section-padding: 60px;
+
+  /*==== border radius ====*/
+  --radius-circle: 50%;
+  --radius-5: 5px;
+  --radius-3: 3px;
+
+  /*==== borda ====*/
+  --border: hsl(40, 23%, 3%);
+  --border-30: hsla(44, 74%, 39%, 0.3);
+
+  /*==== sombra ====*/
+  --shadow: 0 0 20px rgba(0, 0, 0, 0.7); /*horizontal/vertical/desfoque/espelhamento*/
+
+  /*==== transição ====*/
+  --transition-1: 250ms ease;
+  --transition-2: 500ms ease;
+  --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
+
+  /*==== clip path ====*/
+  --clip-path-1: polygon(0 0, 100% 0, 100% 0, 0 0);
+  --clip-path-2: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  --clip-path-3: polygon(0% 0%, 90% 0, 100% 30%, 100% 100%, 0 100%);
+  --clip-path-4: polygon(90% 0, 100% 40%, 100% 100%, 0 100%, 0 0);
+  --clip-path-5: polygon(100% 0, 100% 100%, 10% 100%, 0 60%, 0 0);
+  --clip-path-6: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 40%);
+  --clip-path-7: polygon(100% 0, 100% 60%, 90% 100%, 0 100%, 0 0);
+  --clip-path-8: polygon(0% 0%, 70% 0, 100% 30%, 100% 100%, 0 100%);
+  --clip-path-9: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+}
+
+/*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a,
+img,
+span,
+input,
+button,
+textarea,
+ion-icon {
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  height: auto;
+}
+
+input,
+button,
+textarea {
+  background: none;
+  border: none;
+  font: inherit; /*herda da div pai*/
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+ion-icon {
+  pointer-events: none;
+}
+
+address {
+  font-size: 10px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black-color);
+  color: var(--text-gainsboro);
+  font-family: var(--ff-cinzel);
+  font-size: var(--fs-4);
+  font-weight: var(--weight-regular);
+  line-height: 1.6;
+  overflow-x: hidden;
+  height: 10000px; /*apenas para mostrar a barra de rolagem*/
+}
+
+:focus-visible {
+  outline-offset: 4px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--black-color-lighten);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--purple-color);
+  border-radius: 8px;
+  border: 2px solid var(--black-color-lighten);
+  cursor: pointer;
+}
