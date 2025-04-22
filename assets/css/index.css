@@ -201,10 +201,24 @@ body {
   transform: scale(1.05);
 }
 
+.search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.6rem;
+  color: var(--text-white);
+  margin-left: 1rem;
+  transition: transform 0.2 ease, color 0.3 ease;
+}
+
+.search-btn:hover {
+  transform: scale(1.2);
+  color: var(--purple-color);
+}
+
 /* HEADER */
 
-.nav-toggle-btn,
-.dropdown-menu {
+.nav-toggle-btn {
   display: none;
 }
 
@@ -213,6 +227,7 @@ body {
   height: auto;
   object-fit: contain;
   display: block;
+  border-radius: var(--radius-5);
 }
 
 .header {
@@ -224,4 +239,92 @@ body {
   padding: 10px 12px;
   z-index: 4;
   box-shadow: var(--shadow);
+}
+
+.navbar {
+  position: absolute;
+  right: 12px;
+  left: 12px;
+  background: var(--black-color-light);
+  padding: 0 15px;
+}
+
+.navbar-link {
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-size: var(--fs-8);
+  font-weight: var(--weight-semiBold);
+  color: var(--white-color);
+  transition: color 0.3 ease;
+}
+
+.navbar-link:hover {
+  color: var(--purple-color);
+}
+
+.navbar,
+.navbar.active {
+  all: unset;
+  display: block;
+}
+
+.navbar-list {
+  display: flex;
+}
+
+.navbar-item {
+  border: none;
+}
+
+.dropdown-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.dropdown-item {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 120%;
+  left: 0;
+  background: var(--black-color-light);
+  border-radius: var(--radius-5);
+  box-shadow: var(--shadow);
+  min-width: 180px;
+  z-index: 10;
+}
+
+.dropdown-link {
+  color: var(--white-color);
+  text-decoration: none;
+  padding: 0.8rem 1.2rem;
+  font-size: var(--fs-8);
+  letter-spacing: 0.5px;
+  transition: background 0.3s, color 0.3s;
+  font-family: var(--ff-poppins);
+}
+
+.dropdown-link:hover {
+  background: var(--purple-color);
+  color: var(--text-white);
+}
+
+.dropdown-item.active .dropdown-menu {
+  display: flex;
+}
+
+/* BANNER */
+
+.banner video {
+  position: relative;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
 }
