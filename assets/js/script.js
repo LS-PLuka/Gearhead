@@ -41,3 +41,20 @@ document.addEventListener('keydown', (e) => {
     searchOverlay.style.display = 'none';
   }
 });
+
+// Galeria
+const imagens = document.querySelectorAll('.galeria img');
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightbox-img');
+
+imagens.forEach((img) => {
+  img.addEventListener('click', () => {
+    lightboxImg.src = img.src;
+    lightbox.classList.add('show');
+  });
+});
+
+// Fechar a lightbox
+lightbox.addEventListener('click', () => {
+  lightbox.classList.remove('show');
+});

@@ -42,7 +42,7 @@
                     </li>
 
                     <li class="navbar-item">
-                        <a href="#" class="navbar-link">Garagem</a>
+                        <a href="#garagem" class="navbar-link">Garagem</a>
                     </li>
 
                     <!-- Dropdown -->
@@ -78,6 +78,12 @@
 
                             <li>
                                 <a href="#" class="dropdown-link">
+                                    Suspensão
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-link">
                                     Estética
                                 </a>
                             </li>
@@ -101,6 +107,15 @@
                 <button class="close-btn" id="closeSearch" aria-label="Fechar busca">
                     <ion-icon name="close-outline"></ion-icon>
                 </button>
+            
+                <div class="search-container">
+                    <input
+                        type="text"
+                        placeholder="O que você está procurando?"
+                        class="search-input"
+                        autofocus
+                        />
+                </div>
             </div>
 
             <button class="nav-toggle-btn" aria-label="menu mobile">
@@ -114,6 +129,133 @@
         <video autoplay muted loop>
             <source src="assets/video/video-index.mp4">
         </video>
+    </section>
+
+    <!-- GALERIA DE IMAGENS -->
+    <section class="section gallery" id="garagem">
+        <div class="container-galeria">
+            <p class="section-subtitle text-center">Nosso Trabalho</p>
+            <h2 class="h2 text-center">Confira o trabalho da nossa equipe</h2>
+        </div>
+
+        <div class="galeria">
+            <img src="assets/img/porsche.webp" alt="foto1">
+            <img src="assets/img/laferrari.jpg" alt="foto2">
+            <img src="assets/img/veneno.jpg" alt="foto3">
+            <img src="assets/img/amg-gt.webp" alt="foto4">
+        </div>
+
+        <div class="botao-ver-mais">
+            <a href="#" class="btn-ver-mais" title="Ver galeria">
+                <ion-icon name="arrow-forward-outline"></ion-icon>
+            </a>
+        </div>
+
+        <!-- LIGHTBOX -->
+        <div class="lightbox" id="lightbox">
+            <img src="" alt="imagem ampliada" id="lightbox-img">
+        </div>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section class="section service" aria-label="service">
+        <div class="container-serv">
+            <p class="section-subtitle text-center">Nossos Serviços</p>
+            <h2 class="h2 section-title text-center">O que oferecemos</h2>
+        
+            <ul class="service-list">
+                <!-- CARD 1 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Revisão</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- CARD 2 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Manutenção</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- CARD 3 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Alinhamento</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- IMG CENTRO -->
+                <li class="service-banner">
+                    <figure>
+                        <img src="" alt="" class="w-100">
+                    </figure>
+                </li>
+
+                <!-- CARD 4 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Motores</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- CARD 5 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Suspensão</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- CARD 6 -->
+                <li>
+                    <div class="service-card">
+                        <div class="card-icon">
+                            <img src="" alt="" class="w-100">
+                        </div>
+
+                        <div>
+                            <h3 class="h3 card-title">Estética</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam ex delectus, iure, autem repellat corporis velit saepe suscipit ducimus aliquam est laborum minima mollitia laboriosam cumque neque et qui iusto.</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
     </section>
 
     <!-- Script -->
