@@ -98,7 +98,7 @@
                 </ul>
             </nav>
 
-            <a href="#" class="btn">Login</a>
+            <a href="#" class="btn" id="openLogin">Login</a>
 
             <button class="search-btn" id="searchToggle" aria-label="Buscar"><ion-icon name="search-outline"></ion-icon></button>
 
@@ -129,6 +129,22 @@
         <video autoplay muted loop>
             <source src="assets/video/video-index.mp4">
         </video>
+    </section>
+
+    <!-- SOBRE -->
+    <section class="section about" aria-label="sobre" id="sobre">
+        <figure class="about-banner">
+            <img src="assets/img/sobre-img.jpg" alt="sobre" class="w-100 efeito">
+        </figure>
+
+        <div class="about-content">
+            <p class="section-subtitle">Sobre a Gearhead</p>
+            <h2 class="h2 text-center">Seu automóvel merece o melhor!</h2>
+            <p class="section-text-1">
+                Oficina especializada em manutenção e reparos automotivos, com atendimento de qualidade, agilidade e confiança para cuidar do seu veículo.
+            </p>
+            <a href="#" class="btn">Saiba mais</a>
+        </div>
     </section>
 
     <!-- GALERIA DE IMAGENS -->
@@ -168,7 +184,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/003-mechanic.png" alt="revisao" class="w-100">
                         </div>
 
                         <div>
@@ -182,7 +198,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/002-mechanism.png" alt="manutencao" class="w-100">
                         </div>
 
                         <div>
@@ -196,7 +212,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/001-system.png" alt="alinhamento" class="w-100">
                         </div>
 
                         <div>
@@ -217,7 +233,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/004-wrench.png" alt="motores" class="w-100">
                         </div>
 
                         <div>
@@ -231,7 +247,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/006-technical-support.png" alt="suspensao" class="w-100">
                         </div>
 
                         <div>
@@ -245,7 +261,7 @@
                 <li>
                     <div class="service-card">
                         <div class="card-icon">
-                            <img src="" alt="" class="w-100">
+                            <img src="assets/img/005-sedan.png" alt="estetica" class="w-100">
                         </div>
 
                         <div>
@@ -255,6 +271,38 @@
                     </div>
                 </li>
             </ul>
+        </div>
+    </section>
+
+    <!--Login-->
+    <section class="container-login">
+        <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+
+                <form action="#">
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Usuário</label>
+                        <ion-icon name="person"></ion-icon>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" required>
+                        <label>Senha</label>
+                        <ion-icon name="lock-closed"></ion-icon>
+                    </div>
+
+                    <button type="submit" class="btn btn-login">Entrar</button>
+
+                    <div class="logreg-link">
+                        <p>
+                            Não possui uma conta? 
+                            <a href="#" class="register-link">Clique aqui!</a> 
+                        </p>
+                    </div>
+                </form>
+            </div>
         </div>
     </section>
 
